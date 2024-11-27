@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package -X -DskipTests
 
-FROM openjdk:19-jdk
+FROM openjdk:17-ea-10-jdk-slim
 WORKDIR /app
-COPY --from=build ./app/target/*.jar ./datadomus.jar
-ENTRYPOINT java -jar datadomus.jar
+COPY --from=build ./app/target/*.jar ./springdeskcurso.jar
+ENTRYPOINT java -jar springdeskcurso.jar
