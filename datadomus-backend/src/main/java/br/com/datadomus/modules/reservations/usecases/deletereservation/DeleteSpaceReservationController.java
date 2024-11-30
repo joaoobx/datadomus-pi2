@@ -15,7 +15,7 @@ public class DeleteSpaceReservationController {
         this.deleteSpaceReservationService = deleteSpaceReservationService;
     }
 
-    @DeleteMapping("/resident/delete/{id}")
+    @DeleteMapping("/reservation/delete/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void execute(@PathVariable("id") Long id) {
 

@@ -18,7 +18,7 @@ public class CreateSpaceReservationController {
         this.createSpaceReservationService = createSpaceReservationService;
     }
 
-    @PostMapping("/resident/create")
+    @PostMapping("/reservation/create")
     public ResponseEntity<CreateSpaceReservationResponseDTO> execute(@Valid @RequestBody CreateSpaceReservationRequestDTO request) {
 
         SpaceReservation spaceReservation = createSpaceReservationService.execute(request);

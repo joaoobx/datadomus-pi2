@@ -18,7 +18,7 @@ public class UpdateSpaceReservationController {
         this.updateSpaceReservationService = updateSpaceReservationService;
     }
 
-    @PutMapping("/resident/update")
+    @PutMapping("/reservation/update")
     public ResponseEntity<UpdateSpaceReservationResponseDTO> execute(@Valid @RequestBody UpdateSpaceReservationRequestDTO request) {
 
         SpaceReservation spaceReservation = updateSpaceReservationService.execute(request);

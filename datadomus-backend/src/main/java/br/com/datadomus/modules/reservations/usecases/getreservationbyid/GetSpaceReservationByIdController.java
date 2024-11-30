@@ -18,7 +18,7 @@ public class GetSpaceReservationByIdController {
         this.getSpaceReservationByIdService = getSpaceReservationByIdService;
     }
 
-    @GetMapping("/resident/{id}")
+    @GetMapping("/reservation/{id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<GetSpaceReservationByIdResponseDTO> execute(@PathVariable("id") Long id) {
 

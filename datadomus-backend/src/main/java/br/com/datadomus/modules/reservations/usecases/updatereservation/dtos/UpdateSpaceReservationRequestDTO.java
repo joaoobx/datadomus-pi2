@@ -23,9 +23,8 @@ public class UpdateSpaceReservationRequestDTO {
     @JsonProperty("resident_name")
     protected String residentName = "";
 
-    @NotBlank(message = "O campo 'apartment_number' deve ser preenchido")
-    @NotNull(message = "O campo 'apartment_number' não está presente ")
-    @JsonProperty("apartment_number")
+    @NotNull(message = "O campo 'Apartment_number' não está presente ")
+    @JsonProperty("Apartment_number")
     protected Integer apartmentNumber = null;
 
     @NotBlank(message = "O campo 'Title' deve ser preenchido")
