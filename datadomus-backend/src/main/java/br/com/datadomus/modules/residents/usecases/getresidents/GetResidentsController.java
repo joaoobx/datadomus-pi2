@@ -18,7 +18,7 @@ public class GetResidentsController {
         this.getResidentsService = getResidentsService;
     }
 
-    @GetMapping("/resident/{id}")
+    @GetMapping("/residents")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Resident>> execute() {
 
