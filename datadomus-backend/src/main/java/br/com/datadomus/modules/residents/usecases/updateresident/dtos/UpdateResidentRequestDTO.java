@@ -12,7 +12,7 @@ public class UpdateResidentRequestDTO {
 
     @NotBlank(message = "O campo 'id' deve ser preenchido")
     @NotNull(message = "O campo 'id' não está presente ")
-    protected String id;
+    protected Integer id;
 
     @NotBlank(message = "O campo 'registration_date' deve ser preenchido")
     @NotNull(message = "O campo 'registration_date' não está presente ")

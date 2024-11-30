@@ -16,7 +16,7 @@ public class Resident {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected String id;
+    protected Integer id;
 
     @Column(name = "registration_date")
     protected String registrationDate = "";

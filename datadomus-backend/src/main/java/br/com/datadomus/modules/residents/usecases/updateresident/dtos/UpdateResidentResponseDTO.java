@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class UpdateResidentResponseDTO {
 
-    protected String id;
+    protected Integer id;
 
     @JsonProperty("registration_date")
     protected String registrationDate;
