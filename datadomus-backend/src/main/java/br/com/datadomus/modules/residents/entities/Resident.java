@@ -1,6 +1,7 @@
 package br.com.datadomus.modules.residents.entities;
 
 import br.com.datadomus.modules.residents.usecases.createresident.dtos.CreateResidentRequestDTO;
+import br.com.datadomus.modules.residents.usecases.updateresident.dtos.UpdateResidentRequestDTO;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -46,6 +47,17 @@ public class Resident {
         this.telephone2 = createResidentRequestDTO.getTelephone2();
         this.observations = createResidentRequestDTO.getObservations();
         this.registrationDate = createResidentRequestDTO.getRegistrationDate();
+    }
+
+    public Resident(UpdateResidentRequestDTO updateResidentRequestDTO) {
+        this.id = updateResidentRequestDTO.getId();
+        this.apartmentNumber = updateResidentRequestDTO.getApartmentNumber();
+        this.email = updateResidentRequestDTO.getEmail();
+        this.residentName = updateResidentRequestDTO.getResidentName();
+        this.telephone1 = updateResidentRequestDTO.getTelephone1();
+        this.telephone2 = updateResidentRequestDTO.getTelephone2();
+        this.observations = updateResidentRequestDTO.getObservations();
+        this.registrationDate = updateResidentRequestDTO.getRegistrationDate();
     }
 
 }
