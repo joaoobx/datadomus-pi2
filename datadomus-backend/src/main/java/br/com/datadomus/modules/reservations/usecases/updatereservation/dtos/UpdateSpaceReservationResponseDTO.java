@@ -15,28 +15,28 @@ public class UpdateSpaceReservationResponseDTO {
     protected String registrationDate;
 
     @JsonProperty("resident_name")
-    protected String residentName = "";
+    protected String residentName;
 
     @JsonProperty("apartment_number")
-    protected Integer apartmentNumber = null;
+    protected Integer apartmentNumber;
 
     @JsonProperty("Title")
-    protected String title = "";
+    protected String title;
 
     @JsonProperty("Event_date")
-    protected String eventDate = "";
+    protected String eventDate;
 
     @JsonProperty("Start_time")
-    protected String startTime = "";
+    protected String startTime;
 
     @JsonProperty("End_time")
-    protected String endTime = "";
+    protected String endTime;
 
     @JsonProperty("Place")
-    protected String place = "";
+    protected String place;
 
     @JsonProperty("Observations")
-    protected String observations = "";
+    protected String observations;
 
     public UpdateSpaceReservationResponseDTO(SpaceReservation spaceReservation) {
         this.id = spaceReservation.getId();
