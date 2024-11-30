@@ -1,6 +1,11 @@
 package br.com.datadomus.exception;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class ErrorModel {
 
     private String code;
@@ -13,27 +18,9 @@ public class ErrorModel {
         this.source = source;
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
+    public ErrorModel(String code, String detail) {
         this.code = code;
-    }
-
-    public String getDetail() {
-        return detail;
-    }
-
-    public void setDetail(String detail) {
         this.detail = detail;
     }
 
-    public String getSource() {
-        return source;
-    }
-
-    public void setSource(String source) {
-        this.source = source;
-    }
 }

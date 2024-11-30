@@ -1,4 +1,4 @@
-package br.com.datadomus.modules.residents.usecases.updateresident.dtos;
+package br.com.datadomus.modules.residents.usecases.getresidentbyid.dtos;
 
 import br.com.datadomus.modules.residents.entities.Resident;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class UpdateResidentResponseDTO {
+public class GetResidentByIdResponseDTO {
 
     protected Long id;
 
@@ -32,7 +32,7 @@ public class UpdateResidentResponseDTO {
     @JsonProperty("Observations")
     protected String observations;
 
-    public UpdateResidentResponseDTO(Resident resident) {
+    public GetResidentByIdResponseDTO(Resident resident) {
         this.id = resident.getId();
         this.apartmentNumber = resident.getApartmentNumber();
         this.email = resident.getEmail();

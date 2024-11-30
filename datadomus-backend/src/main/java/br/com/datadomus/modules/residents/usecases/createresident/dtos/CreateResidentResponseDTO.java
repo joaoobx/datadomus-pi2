@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 public class CreateResidentResponseDTO {
 
-    protected Integer id;
+    protected Long id;
 
     @JsonProperty("registration_date")
     protected String registrationDate;

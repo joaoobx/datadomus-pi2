@@ -1,7 +1,12 @@
 package br.com.datadomus.exception;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.List;
 
+@Setter
+@Getter
 public class ErrorResponseModel {
 
     private String type;
@@ -13,19 +18,4 @@ public class ErrorResponseModel {
         this.errorModels = errorModels;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public List<ErrorModel> getErrorModels() {
-        return errorModels;
-    }
-
-    public void setErrorModels(List<ErrorModel> errorModels) {
-        this.errorModels = errorModels;
-    }
 }

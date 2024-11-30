@@ -11,7 +11,7 @@ import lombok.Setter;
 public class UpdateResidentRequestDTO {
 
     @NotNull(message = "O campo 'id' não está presente ")
-    protected Integer id;
+    protected Long id;
 
     @NotBlank(message = "O campo 'registration_date' deve ser preenchido")
     @NotNull(message = "O campo 'registration_date' não está presente ")
