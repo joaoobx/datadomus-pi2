@@ -20,7 +20,6 @@ public class CreateResidentRequestDTO {
     @JsonProperty("resident_name")
     protected String residentName;
 
-    @NotBlank(message = "O campo 'Apartment_number' deve ser preenchido")
     @NotNull(message = "O campo 'Apartment_number' não está presente ")
     @JsonProperty("Apartment_number")
     protected Integer apartmentNumber;

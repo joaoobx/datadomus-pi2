@@ -2,7 +2,11 @@ package br.com.datadomus.modules.residents.usecases.createresident.dtos;
 
 import br.com.datadomus.modules.residents.entities.Resident;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class CreateResidentResponseDTO {
 
     protected Integer id;
