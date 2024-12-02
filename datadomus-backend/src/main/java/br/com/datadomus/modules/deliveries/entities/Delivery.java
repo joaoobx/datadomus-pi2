@@ -10,7 +10,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@Table(name = "warnings")
+@Table(name = "deliveries")
 @NoArgsConstructor
 public class Delivery {
 

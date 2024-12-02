@@ -17,22 +17,19 @@ public class GetDeliveryByIdResponseDTO {
     @JsonProperty("expiration_date")
     protected String expirationDate;
 
-    @JsonProperty("Title")
-    protected String title;
+    @JsonProperty("deliveries_orders")
+    protected String deliveriesOrders;
 
-    @JsonProperty("warning_text")
-    protected String warningText;
+    @JsonProperty("Apartment_number")
+    protected String apartmentNumber;
 
-    @JsonProperty("File")
-    protected String file;
 
     public GetDeliveryByIdResponseDTO(Delivery delivery) {
-        this.id = delivery.getId();
+        this.id  = delivery.getId();
         this.registrationDate = delivery.getRegistrationDate();
         this.expirationDate = delivery.getExpirationDate();
-        this.title = delivery.getTitle();
-        this.warningText = delivery.getWarningText();
-        this.file = delivery.getFile();
+        this.deliveriesOrders = delivery.getDeliveriesOrders();
+        this.apartmentNumber = delivery.getApartmentNumber();
     }
 
 }

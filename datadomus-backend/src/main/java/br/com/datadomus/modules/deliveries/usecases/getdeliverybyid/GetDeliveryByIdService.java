@@ -20,7 +20,7 @@ public class GetDeliveryByIdService {
             return this.deliveryRepository.findById(id).orElseThrow();
 
         } catch (Exception exception) {
-            throw new RuntimeException("Reserva de espaço não encontrada");
+            throw new RuntimeException("Entrega não encontrada");
         }
 
     }

@@ -29,7 +29,6 @@ public class UpdateDeliveryRequestDTO {
     @JsonProperty("deliveries_orders")
     protected String deliveriesOrders = "";
 
-    @NotBlank(message = "O campo 'apartment_number' deve ser preenchido")
     @NotNull(message = "O campo 'apartment_number' não está presente ")
     @JsonProperty("apartment_number")
     protected String apartmentNumber = "";

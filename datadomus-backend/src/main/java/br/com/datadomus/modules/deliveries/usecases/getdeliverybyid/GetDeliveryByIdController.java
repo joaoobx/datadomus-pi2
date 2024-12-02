@@ -18,7 +18,7 @@ public class GetDeliveryByIdController {
         this.getDeliveryByIdService = getDeliveryByIdService;
     }
 
-    @GetMapping("/warning/{id}")
+    @GetMapping("/delivery/{id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<GetDeliveryByIdResponseDTO> execute(@PathVariable("id") Long id) {
 

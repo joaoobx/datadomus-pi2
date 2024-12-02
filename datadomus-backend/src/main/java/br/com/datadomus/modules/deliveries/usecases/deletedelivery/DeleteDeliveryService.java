@@ -18,7 +18,7 @@ public class DeleteDeliveryService {
             this.deliveryRepository.deleteById(id);
 
         } catch (Exception exception) {
-            throw new RuntimeException("Reserva de espaço não encontrada");
+            throw new RuntimeException("Entrega não encontrada");
         }
 
     }

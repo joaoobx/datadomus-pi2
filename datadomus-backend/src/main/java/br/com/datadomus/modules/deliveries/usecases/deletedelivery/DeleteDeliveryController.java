@@ -15,7 +15,7 @@ public class DeleteDeliveryController {
         this.deleteDeliveryService = deleteDeliveryService;
     }
 
-    @DeleteMapping("/warning/delete/{id}")
+    @DeleteMapping("/delivery/delete/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void execute(@PathVariable("id") Long id) {
 

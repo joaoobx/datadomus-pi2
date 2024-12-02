@@ -18,7 +18,7 @@ public class CreateDeliveryController {
         this.createDeliveryService = createDeliveryService;
     }
 
-    @PostMapping("/warning/create")
+    @PostMapping("/delivery/create")
     public ResponseEntity<CreateDeliveryResponseDTO> execute(@Valid @RequestBody CreateDeliveryRequestDTO request) {
 
         Delivery delivery = createDeliveryService.execute(request);

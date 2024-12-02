@@ -18,7 +18,7 @@ public class GetDeliveriesController {
         this.getDeliveriesService = getDeliveriesService;
     }
 
-    @GetMapping("/warnings")
+    @GetMapping("/deliveries")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Delivery>> execute() {
 

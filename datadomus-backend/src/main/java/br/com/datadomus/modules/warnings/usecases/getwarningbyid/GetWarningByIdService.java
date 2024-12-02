@@ -20,7 +20,7 @@ public class GetWarningByIdService {
             return this.warningRepository.findById(id).orElseThrow();
 
         } catch (Exception exception) {
-            throw new RuntimeException("Reserva de espaço não encontrada");
+            throw new RuntimeException("Aviso não encontrado");
         }
 
     }

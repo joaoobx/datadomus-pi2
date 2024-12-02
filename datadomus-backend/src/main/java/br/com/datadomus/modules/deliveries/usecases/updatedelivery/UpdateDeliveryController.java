@@ -18,7 +18,7 @@ public class UpdateDeliveryController {
         this.updateDeliveryService = updateDeliveryService;
     }
 
-    @PutMapping("/warning/update")
+    @PutMapping("/delivery/update")
     public ResponseEntity<UpdateDeliveryResponseDTO> execute(@Valid @RequestBody UpdateDeliveryRequestDTO request) {
 
         Delivery delivery = updateDeliveryService.execute(request);
