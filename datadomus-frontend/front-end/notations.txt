@@ -1,0 +1,28 @@
+https://youtu.be/NbhoeLj6lBs
+
+npm create vite@latest
+npm i axios react-router-dom
+
+npm run dev
+
+import {createBrowserRoute, RouteProvider} from "React-router-dom"; 
+
+const router = createBrowserRoute([
+{
+element : <App/>;
+children:[{
+path = "/",
+},
+{
+path = "/new",
+}
+]
+
+Criar a pasta routes em src
+
+}
+])
+Home.jsx
+NewPost.jsx 
+
+<Link to={"/posts/${post.id"} className="btn"}> Ler mais </Link>
