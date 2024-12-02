@@ -26,7 +26,7 @@ public class CreateDeliveryRequestDTO {
     protected String deliveriesOrders = "";
 
     @NotNull(message = "O campo 'apartment_number' não está presente ")
-    @JsonProperty("apartment_number")
+    @JsonProperty("Apartment_number")
     protected Integer apartmentNumber = null;
 
 }

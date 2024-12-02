@@ -27,7 +27,7 @@ public class Delivery {
     @Column(name = "deliveries_orders")
     protected String deliveriesOrders = "";
 
-    @Column(name = "Apartment_number")
+    @Column(name = "apartment_number")
     protected Integer apartmentNumber = null;
 
     public Delivery(CreateDeliveryRequestDTO createDeliveryRequestDTO) {

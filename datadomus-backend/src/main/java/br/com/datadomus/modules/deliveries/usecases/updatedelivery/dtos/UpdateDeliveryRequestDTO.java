@@ -10,8 +10,7 @@ import lombok.Setter;
 @Setter
 public class UpdateDeliveryRequestDTO {
 
-    @NotNull(message = "O campo 'registration_date' não está presente ")
-    @JsonProperty("registration_date")
+    @NotNull(message = "O campo 'id' não está presente ")
     protected Long id;
 
     @NotBlank(message = "O campo 'registration_date' deve ser preenchido")
@@ -30,7 +29,7 @@ public class UpdateDeliveryRequestDTO {
     protected String deliveriesOrders = "";
 
     @NotNull(message = "O campo 'apartment_number' não está presente ")
-    @JsonProperty("apartment_number")
+    @JsonProperty("Apartment_number")
     protected Integer apartmentNumber = null;
 
 }

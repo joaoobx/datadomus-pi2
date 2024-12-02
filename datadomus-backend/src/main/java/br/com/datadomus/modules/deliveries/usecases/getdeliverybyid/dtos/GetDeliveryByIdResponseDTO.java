@@ -23,7 +23,6 @@ public class GetDeliveryByIdResponseDTO {
     @JsonProperty("Apartment_number")
     protected Integer apartmentNumber;
 
-
     public GetDeliveryByIdResponseDTO(Delivery delivery) {
         this.id  = delivery.getId();
         this.registrationDate = delivery.getRegistrationDate();
