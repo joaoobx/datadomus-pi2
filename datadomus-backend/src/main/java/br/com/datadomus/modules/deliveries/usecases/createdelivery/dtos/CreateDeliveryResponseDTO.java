@@ -21,7 +21,7 @@ public class CreateDeliveryResponseDTO {
     protected String deliveriesOrders;
 
     @JsonProperty("Apartment_number")
-    protected String apartmentNumber;
+    protected Integer apartmentNumber;
 
     public CreateDeliveryResponseDTO(Delivery delivery) {
         this.id  = delivery.getId();

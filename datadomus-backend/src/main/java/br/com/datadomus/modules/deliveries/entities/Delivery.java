@@ -28,7 +28,7 @@ public class Delivery {
     protected String deliveriesOrders = "";
 
     @Column(name = "Apartment_number")
-    protected String apartmentNumber = "";
+    protected Integer apartmentNumber = null;
 
     public Delivery(CreateDeliveryRequestDTO createDeliveryRequestDTO) {
         this.registrationDate = createDeliveryRequestDTO.getRegistrationDate();

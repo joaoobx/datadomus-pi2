@@ -31,6 +31,6 @@ public class UpdateDeliveryRequestDTO {
 
     @NotNull(message = "O campo 'apartment_number' não está presente ")
     @JsonProperty("apartment_number")
-    protected String apartmentNumber = "";
+    protected Integer apartmentNumber = null;
 
 }
