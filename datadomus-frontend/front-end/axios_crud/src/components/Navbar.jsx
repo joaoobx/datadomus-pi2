@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <h2>
-        <Link to={"/"}>Cadastro de Moradores</Link>
+        <Link to={"/"}></Link>
       </h2>
       <ul>
         <li>
@@ -15,7 +15,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to={"/new"} className="new-btn">
-            Cadastrar
+            Login
           </Link>
         </li>
       </ul>

@@ -9,7 +9,6 @@ function App() {
       <div className="container">
         <Outlet />
       </div>
-      <h1>Datadomus</h1>
     </div>
   );
 }

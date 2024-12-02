@@ -26,15 +26,21 @@ const Home = () => {
   }, []);
 
   return (
+    /**************** */
     <div className="home">
-      <h1>Moradores</h1>
       {posts.length === 0 ? (
         <p>Carregando...</p>
       ) : (
         posts.map((post) => (
           <div className="post" key={post.id}>
             <h2>{post.residentName}</h2>
-            <p>{post.email}</p>
+            <p>
+              {[post.registrationDate, post.apartmentNumber, post.telephone1]}
+            </p>
+            <p>
+              Telefone: {post.telephone2}&nbsp;&nbsp;&nbsp; Email:{post.email}
+              &nbsp;&nbsp;&nbsp; Observação: {post.observations}
+            </p>
           </div>
         ))
       )}
