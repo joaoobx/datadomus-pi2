@@ -47,4 +47,9 @@ public class UpdateResidentRequestDTO {
     @JsonProperty("Observations")
     protected String observations;
 
+    @NotBlank(message = "O campo 'password' deve ser preenchido")
+    @NotNull(message = "O campo 'password' não está presente ")
+    @JsonProperty("password")
+    protected String password;
+
 }
