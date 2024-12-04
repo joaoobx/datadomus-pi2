@@ -1,8 +1,11 @@
 package br.com.datadomus.modules.residents.usecases.login;
 
 import br.com.datadomus.modules.residents.usecases.login.dtos.LoginRequestDTO;
+import br.com.datadomus.modules.residents.usecases.login.dtos.LoginResponseDTO;
+import br.com.datadomus.modules.residents.usecases.updateresident.dtos.UpdateResidentResponseDTO;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -16,9 +19,10 @@ public class LoginController {
 
     @DeleteMapping("/login")
     @ResponseStatus(HttpStatus.OK)
-    public void execute(@Valid @RequestBody LoginRequestDTO request) {
+    public ResponseEntity<LoginResponseDTO> execute(@Valid @RequestBody LoginRequestDTO request) {
 
-        loginService.execute(request);
+        return ResponseEntity.ok(loginService.execute(request));
+
 
     }
 }

@@ -39,6 +39,9 @@ public class Resident {
     @Column(name = "observartions")
     protected String observations = "";
 
+    @Column(name = "observartions")
+    protected String password = "";
+
     public Resident(CreateResidentRequestDTO createResidentRequestDTO) {
         this.apartmentNumber = createResidentRequestDTO.getApartmentNumber();
         this.email = createResidentRequestDTO.getEmail();
@@ -47,6 +50,7 @@ public class Resident {
         this.telephone2 = createResidentRequestDTO.getTelephone2();
         this.observations = createResidentRequestDTO.getObservations();
         this.registrationDate = createResidentRequestDTO.getRegistrationDate();
+        this.password = createResidentRequestDTO.getPassword();
     }
 
     public Resident(UpdateResidentRequestDTO updateResidentRequestDTO) {
@@ -58,6 +62,7 @@ public class Resident {
         this.telephone2 = updateResidentRequestDTO.getTelephone2();
         this.observations = updateResidentRequestDTO.getObservations();
         this.registrationDate = updateResidentRequestDTO.getRegistrationDate();
+        this.password = updateResidentRequestDTO.getPassword();
     }
 
 }
