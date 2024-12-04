@@ -5,6 +5,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.crypto.SecretKey;
@@ -14,8 +15,11 @@ import java.util.Date;
 @Service
 public class JwtUtils {
 
+    @Value("${spring.jwt.secret}")
+    private String springJwtSecret;
+
     private Key getSigningKey() {
-        byte[] keyBytes = Decoders.BASE64.decode("weiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruwei");
+        byte[] keyBytes = Decoders.BASE64.decode(springJwtSecret);
         return Keys.hmacShaKeyFor(keyBytes);
     }
 
