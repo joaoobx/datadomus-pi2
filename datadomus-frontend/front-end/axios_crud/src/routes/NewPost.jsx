@@ -15,14 +15,14 @@ const NewPost = () => {
 
     const post = { title, body, userid: 1 };
 
-    await blogFetch.post("/resident/create/", {
+    await blogFetch.post("/posts", {
       body: post,
     });
     navigate("/");
   };
   return (
     <div className="new-post">
-      <h2>Cadastrar Morador</h2>
+      <h2>Inserir Novo Post</h2>
       <form onSubmit={(e) => createPost(e)}>
         <div className="form-control">
           <label htmlFor="title">Título</label>
@@ -43,7 +43,7 @@ const NewPost = () => {
             onChange={(e) => setBody(e.target.value)}
           />
         </div>
-        <input type="submit" value="Salvar" className="btn" />
+        <input type="submit" value="Criar Post" className="btn" />
       </form>
     </div>
   );

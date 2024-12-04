@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 import "./Home.css";
 
-const Home = () => {
+const Residents = () => {
   const [user, setUser] = useState([]);
 
   const getPosts = async () => {
@@ -58,4 +58,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Residents;
