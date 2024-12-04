@@ -15,7 +15,7 @@ import java.util.Date;
 public class JwtUtils {
 
     private Key getSigningKey() {
-        byte[] keyBytes = Decoders.BASE64.decode("asldhjsakdasdljasdklasdjklas");
+        byte[] keyBytes = Decoders.BASE64.decode("weiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruweiweiryewuiryueyuweyruwei");
         return Keys.hmacShaKeyFor(keyBytes);
     }
 

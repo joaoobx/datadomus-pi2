@@ -26,22 +26,15 @@ public class LoginService {
     }
 
     LoginResponseDTO execute(LoginRequestDTO request){
-
-        try {
-
             Resident resident = this.residentRepository.findResidentByApartmentNumber(request.getApartmentNumber());
 
             String password = request.getPassword();
 
-            if(bCryptUtil.matches(password, resident.getPassword())) {
+            if(Boolean.FALSE.equals(bCryptUtil.matches(password, resident.getPassword()))) {
                 throw new RuntimeException("Senha incorreta");
             }
 
             return new LoginResponseDTO(jwtUtils.createJwt(resident));
-
-        } catch (Exception exception) {
-            throw new RuntimeException("Residente não encontrado");
-        }
 
     }
 

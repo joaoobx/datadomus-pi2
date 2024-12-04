@@ -39,7 +39,7 @@ public class Resident {
     @Column(name = "observartions")
     protected String observations = "";
 
-    @Column(name = "observartions")
+    @Column(name = "password")
     protected String password = "";
 
     public Resident(CreateResidentRequestDTO createResidentRequestDTO) {
